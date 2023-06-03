@@ -5,14 +5,14 @@ int main(void){
 	unsigned int i,j;
 	double a[MAX_ITEMS];
 	double sum=0,variance=0,average;
-	printf("ÏîÊý(×î´ó%d):",MAX_ITEMS);
+	printf("é¡¹æ•°(æœ€å¤§%d):",MAX_ITEMS);
 	scanf("%d",&i);
 	for(j=0;j<i;j++)scanf("%lf",&a[j]);
 	for(j=0;j<i;j++)sum+=a[j];
 	average=sum/i;
 	for(j=0;j<i;j++)variance+=(a[j]-average)*(a[j]-average);
-	printf("Æ½¾ùÊý:%lf\n",average);
-	printf("·½²î:  %lf\n",variance);
+	printf("å¹³å‡æ•°:%lf\n",average);
+	printf("æ–¹å·®:  %lf\n",variance);
 	system("pause");
 	return 0;
 }
